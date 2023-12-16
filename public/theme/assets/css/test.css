@@ -1,0 +1,100 @@
+.shape-group, .edu-breadcrumb-area .edu-breadcrumb, .edu-breadcrumb-area .course-meta, .edu-breadcrumb-area .shape-group, .edu-course-widget.widget-course-summery .content .course-item, .edu-pagination, .about-image-gallery .shape-group li, .about-content .features-list, .about-style-1 .shape-group,
+.about-style-2 .shape-group, .about-style-3 .about-image-gallery .shape-group, .about-style-3 .shape-group, .about-style-5 .shape-group, .cta-banner-2 .shape-group, .cta-banner-3 .shape-group, .edu-cta-banner .shape-group, .edu-cta-box .shape-group, .contact-me .thumbnail .shape-group, .contact-us-info .address-list, .contact-form-area .shape-group, .contact-form.form-style-2 .shape-group, .edu-course .content .course-meta, .edu-course .hover-content-aside .content .course-feature ul, .course-layout-five-tooltip-content .content .course-meta, .course-layout-five-tooltip-content .content .course-feature ul, .course-area-3 .shape-group, .course-area-7 .shape-group, .edu-sorting-area .sorting-right .layout-switcher .switcher-btn, .course-details-content .entry-content .course-meta, .course-curriculam .course-lesson ul, .edu-event .content .event-meta, .edu-event-list .content .event-meta, .edu-event-area .shape-group, .event-details .details-content .event-meta, .edu-faq-content .shape-group, .edu-faq-gallery .shape-group, .faq-style-4 .faq-thumbnail .shape-group, .hero-banner .banner-content .shape-group, .hero-banner .banner-thumbnail .shape-group, .hero-banner.hero-style-2 .banner-gallery .shape-group, .hero-banner.hero-style-3 .shape-group, .hero-banner.hero-style-4 .shape-group, .hero-banner.hero-style-5 .shape-group, .hero-banner.hero-style-6 .shape-group, .hero-banner.hero-style-7 .shape-group, .pricing-table .pricing-body .list-item, .privacy-policy ul, .product-details-area .content .product-feature, .edu-product .inner > .thumbnail .product-hover-info ul, .account-page-area .shape-group, .pv-elementor-area .elementor-thumbnail .shape-group li, .pv-shop-area .shop-thumbnail .shop-thumbnail-images .shape-group li, .pv-inner-page-area .shape-group li, .pv-zoom-demo-area .zoom-thumbnail .shape-group li, .pv-cta-area .shape-group li, .team-share-info, .team-area-3 .shape-group, .team-area-4 .shape-group, .team-area-5 .shape-group, .team-area-6 .shape-group, .team-details-content .main-info .team-meta, .team-details-content .contact-info ul, .video-gallery .shape-group, .error-page-area > .shape-group, .edu-error .thumbnail .shape-group, .coming-soon-page-area .shape-group, .header-top .header-info, .header-action, .edu-footer .information-list, .blog-meta, .edu-blog-area .shape-group, .edu-blog-widget.widget-categories .category-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+/*-------------------
+  Pagination Styles
+---------------------*/
+.edu-pagination {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-top: 70px;
+}
+
+.edu-pagination li {
+    margin: 0 2px;
+}
+
+.edu-pagination li a {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    color: var(--color-heading);
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+}
+
+.edu-pagination li a:before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+    z-index: -1;
+    opacity: 0;
+}
+
+.edu-pagination li a i {
+    font-weight: 700;
+    position: relative;
+    top: 2px;
+}
+
+.edu-pagination li.active a, .edu-pagination li:hover a {
+    color: var(--color-white);
+}
+
+.edu-pagination li.active a:before, .edu-pagination li:hover a:before {
+    opacity: 1;
+}
+
+.edu-pagination li.more-next a {
+    position: relative;
+}
+
+.edu-pagination li.more-next a:after {
+    content: ". . .";
+    font-size: 18px;
+    font-weight: 700;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.edu-pagination.top-space-30 {
+    padding-top: 30px;
+}
